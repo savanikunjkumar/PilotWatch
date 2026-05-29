@@ -1,1 +1,52 @@
-
+{
+  "c0": {
+    "id": 0,
+    "label": "safe_driving",
+    "description": "Driver is attentive, eyes on the road, and both hands on the steering wheel control surfaces."
+  },
+  "c1": {
+    "id": 1,
+    "label": "texting_right",
+    "description": "Driver is holding or interacting with a mobile device using their right hand."
+  },
+  "c2": {
+    "id": 2,
+    "label": "talking_phone_right",
+    "description": "Driver is holding a mobile device to their right ear, taking focus away from peripheral tracking."
+  },
+  "c3": {
+    "id": 3,
+    "label": "texting_left",
+    "description": "Driver is holding or interacting with a mobile device using their left hand."
+  },
+  "c4": {
+    "id": 4,
+    "label": "talking_phone_left",
+    "description": "Driver is holding a mobile device to their left ear."
+  },
+  "c5": {
+    "id": 5,
+    "label": "operating_radio",
+    "description": "Driver is manipulating dashboard elements, climate controls, or infotainment systems."
+  },
+  "c6": {
+    "id": 6,
+    "label": "drinking",
+    "description": "Driver is consuming a beverage, blocking their central visual field and removing a hand from the wheel."
+  },
+  "c7": {
+    "id": 7,
+    "label": "reaching_behind",
+    "description": "Driver is physically turning torso and reaching into the rear passenger or cargo space."
+  },
+  "c8": {
+    "id": 8,
+    "label": "hair_and_makeup",
+    "description": "Driver is adjusting hair, looking into the rearview vanity mirror, or applying cosmetics."
+  },
+  "c9": {
+    "id": 9,
+    "label": "talking_to_passenger",
+    "description": "Driver is turning head away from the forward path to engage socially with a passenger."
+  }
+}
