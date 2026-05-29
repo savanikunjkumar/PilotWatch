@@ -1,8 +1,10 @@
 {
-    "epoch": 14,
-    "model_state_dict": { ... },       
-    "optimizer_state_dict": { ... },   
-    "scheduler_state_dict": { ... },   
-    "loss": 0.2415,                    
-    "best_f1": 0.9124                 
+    "epoch": 11,                       # The specific epoch where the peak performance occurred
+    "model_state_dict": { ... },       # Best performing model weights optimized for inference conversion
+    "best_f1": 0.9418,                 # Golden validation F1-score
+    "config": {                        # Model hyperparameters used during this run
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "backbone": "efficientnet_b3"
+    }
 }
