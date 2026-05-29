@@ -1,1 +1,8 @@
-
+{
+    "epoch": 14,
+    "model_state_dict": { ... },       
+    "optimizer_state_dict": { ... },   
+    "scheduler_state_dict": { ... },   
+    "loss": 0.2415,                    
+    "best_f1": 0.9124                 
+}
