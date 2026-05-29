@@ -1,1 +1,8 @@
-
+{
+    "epoch": 24,
+    "model_state_dict": { ... },       # Weights for U-Net (Encoder downsampling & Decoder upsampling blocks)
+    "optimizer_state_dict": { ... },   # AdamW states for high-dimensional parameter updates
+    "scheduler_state_dict": { ... },   # ReduceLROnPlateau or Cosine schedule state
+    "loss": 0.1105,                    # Combined BCE + Dice loss at the time of saving
+    "best_miou": 0.7842                # Highest Mean Intersection over Union tracked so far
+}
