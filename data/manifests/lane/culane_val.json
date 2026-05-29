@@ -1,1 +1,26 @@
-
+[
+  {
+    "raw_file": "culane/driver_23_30frames/vacio/01310630_0001.jpg",
+    "mask_file": "culane/lanes_seg/driver_23_30frames/vacio/01310630_0001.png",
+    "lane_presence": [1, 1, 1, 0],
+    "environment": ["normal", "daylight"],
+    "coordinates": {
+      "lane_0": [[120, 590], [240, 480], [310, 410], [350, 350]],
+      "lane_1": [[410, 590], [435, 490], [450, 420], [462, 350]],
+      "lane_2": [[680, 590], [620, 490], [580, 420], [550, 350]],
+      "lane_3": []
+    }
+  },
+  {
+    "raw_file": "culane/driver_161_90frames/night/02142145_0342.jpg",
+    "mask_file": "culane/lanes_seg/driver_161_90frames/night/02142145_0342.png",
+    "lane_presence": [0, 1, 1, 1],
+    "environment": ["night", "crowded"],
+    "coordinates": {
+      "lane_0": [],
+      "lane_1": [[395, 590], [420, 500], [442, 430], [455, 360]],
+      "lane_2": [[710, 590], [640, 500], [595, 430], [562, 360]],
+      "lane_3": [[980, 590], [860, 510], [780, 440], [710, 360]]
+    }
+  }
+]
