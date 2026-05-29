@@ -1,1 +1,8 @@
-
+{
+    "epoch": 14,
+    "model_state_dict": { ... },       # Weights for EfficientNet-B3 backbone + custom head (10 classes)
+    "optimizer_state_dict": { ... },   # AdamW states, momentum buffers, and parameter mappings
+    "scheduler_state_dict": { ... },   # CosineAnnealingLR step details
+    "loss": 0.2415,                    # Scalar value of the last training loss step
+    "best_f1": 0.9124                  # Highest evaluation metric tracked up to this epoch
+}
