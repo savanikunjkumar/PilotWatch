@@ -1,1 +1,8 @@
-
+{
+    # Directly maps layer strings to tensor weights for a standard ResNet-50 network
+    "conv1.weight": torch.Tensor(...),
+    "layer1.0.conv1.weight": torch.Tensor(...),
+    ...
+    "fc.weight": torch.Tensor(...),
+    "fc.bias": torch.Tensor(...)
+}
