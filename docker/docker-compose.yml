@@ -1,1 +1,44 @@
+version: '3.8'
 
+services:
+  pilotwatch-inference:
+    container_name: pilotwatch_api
+    build:
+      context: ..                  # Build context is the root of the repository
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"                # Maps localhost:8000 to the container's FastAPI port
+    restart: unless-stopped
+    
+    # CRITICAL: Mount models and data at runtime. Do NOT bake them into the image.
+    # The ':ro' flag ensures the container cannot accidentally corrupt your exported models.
+    volumes:
+      - ../models/exports:/app/models/exports:ro
+      - ../data/manifests/rag:/app/data/manifests/rag:ro
+    
+    environment:
+      # Application config
+      - ENVIRONMENT=production
+      - LOG_LEVEL=info
+      
+      # Driver Model Pointers
+      - DRIVER_MODEL_PATH=/app/models/exports/driver/driver_v1_cpu_quant.onnx
+      - DRIVER_CLASS_MAP=/app/data/manifests/driver/class_map.json
+      
+      # Lane Model Pointers
+      - LANE_MODEL_PATH=/app/models/exports/lane/lane_v1_cpu_quant.onnx
+      
+      # RAG Explainability Pointers
+      - RAG_FAISS_INDEX=/app/models/exports/rag/faiss_index.bin
+      - RAG_KNOWLEDGE_BASE=/app/data/manifests/rag/knowledge_base.jsonl
+    
+    # Resource constraints to ensure the container doesn't crash host machines
+    # during heavy concurrent video stream processing.
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: 4G
+        reservations:
+          cpus: '1.0'
+          memory: 1G
