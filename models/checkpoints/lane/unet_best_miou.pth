@@ -1,1 +1,11 @@
-
+{
+    "epoch": 21,                       # The exact epoch where the model peaked before overfitting
+    "model_state_dict": { ... },       # Clean, export-ready weights
+    "best_miou": 0.8114,               # The golden validation mIoU score
+    "config": {                        # Hyperparameters used to achieve this result
+        "learning_rate": 0.0003,
+        "batch_size": 16,
+        "architecture": "u-net",
+        "input_resolution": [256, 512]
+    }
+}
