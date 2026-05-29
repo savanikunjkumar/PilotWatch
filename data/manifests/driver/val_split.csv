@@ -1,1 +1,11 @@
-
+filename,class_id,bounding_box,is_synthetic
+state_farm/imgs/train/c0/img_22104.jpg,0,"[0.212,0.155,0.778,0.912]",0
+state_farm/imgs/train/c1/img_10543.jpg,1,"[0.248,0.180,0.715,0.890]",0
+state_farm/imgs/train/c2/img_44012.jpg,2,"[0.201,0.125,0.800,0.925]",0
+state_farm/imgs/train/c3/img_89012.jpg,3,"[0.224,0.160,0.785,0.890]",0
+state_farm/imgs/train/c4/img_00321.jpg,4,"[0.208,0.142,0.770,0.918]",0
+state_farm/imgs/train/c5/img_66712.jpg,5,"[0.238,0.205,0.815,0.865]",0
+state_farm/imgs/train/c6/img_12940.jpg,6,"[0.218,0.168,0.765,0.905]",0
+state_farm/imgs/train/c7/img_55410.jpg,7,"[0.115,0.140,0.885,0.940]",0
+state_farm/imgs/train/c8/img_99102.jpg,8,"[0.255,0.112,0.735,0.865]",0
+state_farm/imgs/train/c9/img_33214.jpg,9,"[0.305,0.195,0.845,0.915]",0
